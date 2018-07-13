@@ -274,9 +274,9 @@ destroy@~1.0.4:
   version "1.0.4"
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
 
-discord.js-docs@^0.0.2:
-  version "0.0.2"
-  resolved "https://registry.yarnpkg.com/discord.js-docs/-/discord.js-docs-0.0.2.tgz#01c3a4297c6be96b5f90041e6c7bee629e2313c1"
+discord.js-docs@^0.0.3:
+  version "0.0.3"
+  resolved "https://registry.yarnpkg.com/discord.js-docs/-/discord.js-docs-0.0.3.tgz#382de10259e8e3cfac9538720f8b9b88b0b91a42"
   dependencies:
     axios "^0.18.0"
     common-tags "^1.8.0"
