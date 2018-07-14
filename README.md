@@ -1,6 +1,6 @@
 ## discord.js docs API
 
-A simple API to server discord.js docs using [discord.js-docs](https://github.com/TeeSeal/discord.js-docs).
+A simple API to serve discord.js docs using [discord.js-docs](https://github.com/TeeSeal/discord.js-docs).
 
 ## Routes
 
@@ -31,7 +31,7 @@ Example:
 ### GET `/:project/:branch/embed`
 Tries to resolve the query into a single element.\
 The query must be specified under the `q` queryparam.\
-If that fails back to the behaviour of the `.../search` route.\
+If that fails, falls back to the behaviour of the `.../search` route.\
 Query is expected to be separated with `#` (%23 when uri encoded) or `.` for exact searches.
 
 The result is formatted into a [Discord embed object](https://discordapp.com/developers/docs/resources/channel#embed-object).
