@@ -7,15 +7,15 @@
   "author": "TeeSeal <teesealz@gmail.com>",
   "license": "MIT",
   "dependencies": {
-    "discord.js-docs": "^0.0.3",
+    "discord.js-docs": "^0.0.4",
     "express": "^4.16.3",
     "morgan": "^1.9.0"
   },
   "devDependencies": {
-    "eslint": "^5.1.0",
+    "eslint": "^5.3.0",
     "eslint-config-standard": "^11.0.0",
     "eslint-plugin-import": "^2.13.0",
-    "eslint-plugin-node": "^6.0.1",
+    "eslint-plugin-node": "^7.0.1",
     "eslint-plugin-promise": "^3.8.0",
     "eslint-plugin-standard": "^3.1.0"
   }
