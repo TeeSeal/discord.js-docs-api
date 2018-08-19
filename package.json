@@ -1,6 +1,6 @@
 {
   "name": "discord.js-docs-api",
-  "version": "0.0.2",
+  "version": "0.0.3",
   "description": "Simple API to serve discord.js docs.",
   "main": "index.js",
   "repository": "git@github.com:TeeSeal/discord.js-docs-api.git",
