@@ -22,7 +22,7 @@ function badRequest (res, message) {
 }
 
 app.use('/:project/:branch', async (req, res, next) => {
-  const force = Boolean(req.query.force)
+  const force = req.query.force === 'true'
   const doc = await Doc.fetch(req.params.project, req.params.branch, { force })
   if (!doc) return notFound(res, 'Couldn\'t find docs under that project/branch.')
   res.locals.doc = doc
@@ -38,7 +38,7 @@ function fetchElement (req, res) {
     element = res.locals.doc
   }
 
-  const response = req.query.raw ? element.originalJSON : element.toJSON()
+  const response = req.query.raw === 'true' ? element.originalJSON : element.toJSON()
   return res.status(200).json(response)
 }
 
