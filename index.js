@@ -22,7 +22,8 @@ function badRequest (res, message) {
 }
 
 app.use('/:project/:branch', async (req, res, next) => {
-  const doc = await Doc.fetch(req.params.project, req.params.branch)
+  const force = Boolean(req.query.force)
+  const doc = await Doc.fetch(req.params.project, req.params.branch, { force })
   if (!doc) return notFound(res, 'Couldn\'t find docs under that project/branch.')
   res.locals.doc = doc
   next()
