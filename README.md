@@ -8,14 +8,18 @@ A simple API to serve discord.js docs using [discord.js-docs](https://github.com
 Returns the entire formatted documentation for the given project and branch.\
 Project can be one of: `main`, `commando`, `rpc`.
 
-Add `?raw=true` to receive the original fetched JSON without any formatting.
+> Set the `raw` queryparam to `true` to receive the original fetched JSON without any formatting.\
+> Doesn't work for the `/search` and `/embed` endpoints.\
+> Example: `/main/master?raw=true`, `/main/stable/message/content?raw=true`
+
+> Set the `force` queryparam to `true` to force fetch the docs instead of reading from cache.\
+> Works for all endpoints.\
+> Example: `/main/master?force=true`
 
 ### GET `/:project/:branch/el/:parent/:child`
 Returns the documentation for a single element.\
 `:parent` and `:child` have to be element names. Case does not matter.\
 `:child` can be omitted.
-
-Add `?raw=true` to receive the original fetched JSON without any formatting.
 
 ### GET `/:project/:branch/search`
 Searches the documentation using fuzzy search and returns top 10 hits.\
