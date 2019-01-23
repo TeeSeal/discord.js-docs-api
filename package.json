@@ -6,6 +6,9 @@
   "repository": "git@github.com:TeeSeal/discord.js-docs-api.git",
   "author": "TeeSeal <teesealz@gmail.com>",
   "license": "MIT",
+  "scripts": {
+    "start": "node ."
+  },
   "dependencies": {
     "discord.js-docs": "teeseal/discord.js-docs",
     "express": "^4.16.4",
