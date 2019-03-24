@@ -13,10 +13,13 @@ router.use('/:project/:branch', async (req, res, next) => {
     'rpc/master': 'rpc'
   }[`${req.params.project}/${req.params.branch}`]
 
-  const doc = await Doc.fetch(sourceName, { force })
-  if (!doc) return notFound(res, 'Couldn\'t find docs under that project/branch.')
-  res.locals.doc = doc
-  next()
+  try {
+    const doc = await Doc.fetch(sourceName, { force })
+    res.locals.doc = doc
+    next()
+  } catch (err) {
+    return notFound(res, 'Couldn\'t find/parse given source.')
+  }
 })
 
 function fetchElement (req, res) {

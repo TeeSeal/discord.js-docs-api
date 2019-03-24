@@ -7,11 +7,13 @@ router.use('/*', async (req, res, next) => {
   if (!req.query.src) badRequest(res, 'No source specified.')
 
   const force = req.query.force === 'true'
-  const doc = await Doc.fetch(req.query.src, { force })
-  if (!doc) return notFound(res, 'Couldn\'t find/parse given source.')
-
-  res.locals.doc = doc
-  next()
+  try {
+    const doc = await Doc.fetch(req.query.src, { force })
+    res.locals.doc = doc
+    next()
+  } catch (err) {
+    return notFound(res, 'Couldn\'t find/parse given source.')
+  }
 })
 
 router.get('/', (req, res) => {
