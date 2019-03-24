@@ -259,10 +259,10 @@ destroy@~1.0.4:
   resolved "https://registry.yarnpkg.com/destroy/-/destroy-1.0.4.tgz#978857442c44749e4206613e37946205826abd80"
   integrity sha1-l4hXRCxEdJ5CBmE+N5RiBYJqvYA=
 
-discord.js-docs@^0.0.9:
-  version "0.0.9"
-  resolved "https://registry.yarnpkg.com/discord.js-docs/-/discord.js-docs-0.0.9.tgz#db05f65923e87d41f1ae1502db8beaef6335018f"
-  integrity sha512-Y0FzECTu+U6k44pNwd/Zzd+Krms5O1iArIGIo1OKIlVzYVZ9GEjIWrz/j9ulBDcNbUbT24XA9OTgUws0b7w+nA==
+discord.js-docs@^0.0.10:
+  version "0.0.10"
+  resolved "https://registry.yarnpkg.com/discord.js-docs/-/discord.js-docs-0.0.10.tgz#db09b61c101bb5f0f22b3599fd185e254e7937ce"
+  integrity sha512-I/mgHofAApiQ6Cc9ZnMY4lKrdE3+DO/vfFDW6iEcbXQAQxLQYp5mjKWLVqvRUGexClO2s+qUaiQamMaSxtXMdg==
   dependencies:
     axios "^0.18.0"
     common-tags "^1.8.0"
