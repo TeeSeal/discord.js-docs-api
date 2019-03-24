@@ -10,7 +10,7 @@
     "start": "node src"
   },
   "dependencies": {
-    "discord.js-docs": "^0.0.10",
+    "discord.js-docs": "^0.0.11",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
   },
