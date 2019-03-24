@@ -7,7 +7,7 @@
   "author": "TeeSeal <teesealz@gmail.com>",
   "license": "MIT",
   "scripts": {
-    "start": "node ."
+    "start": "node src"
   },
   "dependencies": {
     "discord.js-docs": "^0.0.9",
