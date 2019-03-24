@@ -10,12 +10,12 @@
     "start": "node ."
   },
   "dependencies": {
-    "discord.js-docs": "^0.0.8",
+    "discord.js-docs": "^0.0.9",
     "express": "^4.16.4",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "eslint": "^5.13.0",
+    "eslint": "^5.15.3",
     "eslint-config-standard": "^12.0.0",
     "eslint-plugin-import": "^2.16.0",
     "eslint-plugin-node": "^8.0.1",
