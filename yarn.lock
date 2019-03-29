@@ -261,7 +261,7 @@ destroy@~1.0.4:
 
 discord.js-docs@teeseal/discord.js-docs:
   version "0.0.11"
-  resolved "https://codeload.github.com/teeseal/discord.js-docs/tar.gz/339d82b0f74ddbdee68cdd6344a7726d958e9470"
+  resolved "https://codeload.github.com/teeseal/discord.js-docs/tar.gz/bf96660a5fb51b9fc312f646900370cef10b6403"
   dependencies:
     axios "^0.18.0"
     common-tags "^1.8.0"
