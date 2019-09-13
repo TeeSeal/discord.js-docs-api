@@ -29,7 +29,7 @@ router.get('/', (req, res) => {
 router.get('/search', (req, res) => {
   if (!req.query.q) return badRequest(res, 'No query specified.')
 
-  const includePrivateElements = req.query.private === 'true'
+  const includePrivateElements = req.query.includePrivate === 'true'
   const results = res.locals.doc
     .search(req.query.q, { excludePrivateElements: !includePrivateElements })
 
@@ -40,7 +40,7 @@ router.get('/search', (req, res) => {
 router.get('/embed', (req, res) => {
   if (!req.query.q) return badRequest(res, 'No query specified.')
 
-  const includePrivateElements = req.query.private === 'true'
+  const includePrivateElements = req.query.includePrivate === 'true'
   const embed = res.locals.doc
     .resolveEmbed(req.query.q, { excludePrivateElements: !includePrivateElements })
 
