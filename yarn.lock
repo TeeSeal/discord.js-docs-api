@@ -263,7 +263,7 @@ destroy@~1.0.4:
 
 discord.js-docs@teeseal/discord.js-docs:
   version "0.1.0"
-  resolved "https://codeload.github.com/teeseal/discord.js-docs/tar.gz/e61bee08cb32db2a7a35d21af6249efbfad4de83"
+  resolved "https://codeload.github.com/teeseal/discord.js-docs/tar.gz/065b49ae24346b5c2051237a04a9aa55131d2e05"
   dependencies:
     common-tags "^1.8.0"
     fuse.js "^3.2.1"
