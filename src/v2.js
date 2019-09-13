@@ -28,14 +28,22 @@ router.get('/', (req, res) => {
 
 router.get('/search', (req, res) => {
   if (!req.query.q) return badRequest(res, 'No query specified.')
-  const results = res.locals.doc.search(req.query.q)
+
+  const includePrivateElements = req.query.private === 'true'
+  const results = res.locals.doc
+    .search(req.query.q, { excludePrivateElements: !includePrivateElements })
+
   if (!results) res.status(200).json([])
   return res.status(200).json(results.map(result => result.toJSON()))
 })
 
 router.get('/embed', (req, res) => {
   if (!req.query.q) return badRequest(res, 'No query specified.')
-  const embed = res.locals.doc.resolveEmbed(req.query.q)
+
+  const includePrivateElements = req.query.private === 'true'
+  const embed = res.locals.doc
+    .resolveEmbed(req.query.q, { excludePrivateElements: !includePrivateElements })
+
   return res.status(200).json(embed)
 })
 
