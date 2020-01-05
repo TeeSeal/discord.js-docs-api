@@ -10,14 +10,14 @@
     "start": "node src"
   },
   "dependencies": {
-    "discord.js-docs": "teeseal/discord.js-docs",
+    "discord.js-docs": "github:teeseal/discord.js-docs",
     "express": "^4.17.1",
     "morgan": "^1.9.1"
   },
   "devDependencies": {
-    "eslint": "^6.4.0",
+    "eslint": "^6.8.0",
     "eslint-config-standard": "^14.1.0",
-    "eslint-plugin-import": "^2.18.2",
+    "eslint-plugin-import": "^2.19.1",
     "eslint-plugin-node": "^10.0.0",
     "eslint-plugin-promise": "^4.2.1",
     "eslint-plugin-standard": "^4.0.1"
